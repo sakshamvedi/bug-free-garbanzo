@@ -1,6 +1,18 @@
 const express = require('express');
 const app = express();
+const cors = require('cors');
 const port = 3000;
+
+const allowedOrigins = ['*'];
+
+
+
+const corsOptions = {
+    origin: allowedOrigin,
+};
+
+
+
 
 app.get('/', (req, res) => {
     res.send([
